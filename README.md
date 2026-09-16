@@ -59,3 +59,7 @@ The **EXE Combine Tool** is a Python-based utility that allows users to merge tw
 2. Install the required dependencies by running:
    ```bash
    pip install pyinstaller
+   pip install pyinstaller-versionfile
+   pip install pefile
+
+
