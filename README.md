@@ -26,6 +26,7 @@ The **EXE Combine Tool** is a Python-based utility that allows users to merge tw
 
 ## Features
 
+### Original
 - **Combine Two EXE Files**: Easily select two `.exe` files to be merged into one.
 - **Icon Selection**: Choose the output executable's icon from:
   - EXE 1's icon
@@ -34,6 +35,12 @@ The **EXE Combine Tool** is a Python-based utility that allows users to merge tw
 - **GUI Interface**: Simple and intuitive interface for selecting files and configuring the output.
 - **Standalone Output**: The combined EXE runs both files without needing the original files to exist.
 
+### Added
+- **Assembly Information Window**: A dedicated modal dialog to edit the output executable's metadata (Product Name, Description, Company Name, Copyright, Trademarks, Original Filename, Product Version, File Version).
+- **Load Metadata from EXE**: Buttons "Load from EXE 1" and "Load from EXE 2" read the existing Version Info from either input file via `pefile` and auto-fill all metadata fields.
+- **File Date Management**: Optional post-build modification of the output executable's Created / Modified / Accessed timestamps.
+  - Accepted formats: `YYYY-MM-DD HH:MM:SS`, `YYYY-MM-DD HH:MM`, `YYYY-MM-DD`.
+  - Empty field = leave that timestamp unchanged.
 ---
 
 ## How to Use the Tool
@@ -42,6 +49,8 @@ The **EXE Combine Tool** is a Python-based utility that allows users to merge tw
 
 - **Python 3.x** installed on your system.
 - **PyInstaller** installed via `pip install pyinstaller`.
+- **PyInstaller-versionfile** installed via `pip install pyinstaller-versionfile`.
+- **PeFile** installed via `pip install pefile`.
 
 ### Installation
 
