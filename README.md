@@ -41,6 +41,7 @@ The **EXE Combine Tool** is a Python-based utility that allows users to merge tw
 - **File Date Management**: Optional post-build modification of the output executable's Created / Modified / Accessed timestamps.
   - Accepted formats: `YYYY-MM-DD HH:MM:SS`, `YYYY-MM-DD HH:MM`, `YYYY-MM-DD`.
   - Empty field = leave that timestamp unchanged.
+- **No console**: Combined exe is now running without opening console.
 ---
 
 ## How to Use the Tool
